@@ -57,4 +57,9 @@ static int count;
 
     return UIStatusBarStyleLightContent;
 }
+// Hide Status Bar
+
+-(BOOL)prefersStatusBarHidden{
+    return YES;
+}
 @end
