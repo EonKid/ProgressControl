@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *lblPercentageCompleted;
+- (IBAction)startProgress:(id)sender;
+@property (strong,nonatomic) NSTimer *myTimer;
+
+@property (strong, nonatomic) IBOutlet UIProgressView *progressView;
 
 @end
 
