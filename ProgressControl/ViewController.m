@@ -18,6 +18,7 @@ static int count;
 - (void)viewDidLoad {
     [super viewDidLoad];
    _progressView.progressTintColor = [UIColor redColor];
+    _progressView.progress = 0;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,7 +27,8 @@ static int count;
 }
 
 - (IBAction)startProgress:(id)sender {
-    
+    _progressView.progress = 0;
+
     count = 0;
     self.lblPercentageCompleted.text = [NSString stringWithFormat:@"%d %%",count*10];
     
